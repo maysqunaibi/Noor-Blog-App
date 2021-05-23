@@ -1,5 +1,5 @@
-import MoviesList from './MoviesList'
-import MoviesInsert from './MoviesInsert'
-import MoviesUpdate from './MoviesUpdate'
-
-export { MoviesList, MoviesInsert, MoviesUpdate }
+import BlogsList from './BlogsList'
+import BlogsInsert from './BlogsInsert'
+import BlogsUpdate from './BlogsUpdate'
+import Header from './Header'
+export { BlogsList, BlogsInsert, BlogsUpdate, Header }
