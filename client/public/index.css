@@ -22,7 +22,11 @@ header {
   text-align: center;
   overflow: hidden;
 }
-
+header p {
+  color:lightgray;
+  text-align: bottom;
+  
+}
 /* vertically center banner section */
 header:before {
   content: '';

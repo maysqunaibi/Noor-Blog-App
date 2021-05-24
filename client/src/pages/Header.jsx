@@ -12,7 +12,7 @@ class Header extends Component {
         <div className="row banner">
           <div className="banner-text">
             <Fade bottom>
-              <h2 className="responsive-headline">Today a reader, tomorrow a leader!</h2>
+              <h2 className="responsive-headline">Today a Reader, Tomorrow a Leader!</h2>
             </Fade>
             <Fade bottom duration={1200}>
               <h3>{description}.</h3>
@@ -31,14 +31,9 @@ class Header extends Component {
               </ul>
             </Fade>
           </div>
+          <p>Created By @Mays Qunaibi</p>
         </div>
-
-        <p className="scrolldown">
-          <a className="smoothscroll" href="#about">
-            <i className="icon-down-circle"></i>
-          </a>
-        </p>
-      </header>
+        </header>
     );
   }
 }

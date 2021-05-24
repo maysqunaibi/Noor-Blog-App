@@ -113,7 +113,7 @@ class BlogsList extends Component {
                     <CardBody>
                       <CardTitle tag="h5">{blog.title}</CardTitle>
                       <CardSubtitle tag="h6" className="mb-2 text-muted">
-                        {blog.createdAt.substring(0, 10)}
+                      @{blog.authorName} : {blog.createdAt.substring(0, 10)}
                       </CardSubtitle>
 
                       <CardText>
