@@ -19,7 +19,7 @@ $ git clone https://github.com/maysqunaibi/Noor-Blog-App.git
 
 ### Configuring App
 
-If you have all the prerequisites installed you should verify if your MongoDB is up.
+
 
 ```bash
 $ cd Noor-Blog-App
