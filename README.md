@@ -11,7 +11,7 @@ This is a simple MERN stack app that allow the user to create and read simple bl
 ## To Start the App: 
 ---------------------
 
-Download
+### Download
 
 ```
 $ git clone https://github.com/maysqunaibi/Noor-Blog-App.git
@@ -35,7 +35,7 @@ $ npm install
 $ npm start
 ```
 
-Docker
+### Docker
 If you have docker installed run the following in the terminal:
 ```bach
 $ cd Noor-Blog-App
