@@ -1,4 +1,4 @@
-# Noon Blog App
+# Noor Blog App
 
 # Introduction
 
