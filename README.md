@@ -2,7 +2,7 @@
 
 # Introduction
 
-This is a simple MERN stack app that allow the user to create and read simple blogs. mainly the perpous of this app is to practice dockerizing react and node-express app using docker-compose.
+This is a simple MERN stack app that allows the user to create and read simple blogs. mainly the purpose of this app is to practice dockerizing react and node-express app using docker-compose
 <br/>
 
 
