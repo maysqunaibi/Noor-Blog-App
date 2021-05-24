@@ -4,11 +4,11 @@ import Fade from "react-reveal";
 import { Link } from 'react-router-dom'
 class Header extends Component {
   render() {
-    const description = "this.props.data.description";
+    const description = "Read and share new perspectives on just about any topic. Everyone’s welcome. ";
 
     return (
       <header id="home">
-        <ParticlesBg type="circle" bg={true} />
+        <ParticlesBg type="lines" num={50} bg={true} />
         <div className="row banner">
           <div className="banner-text">
             <Fade bottom>

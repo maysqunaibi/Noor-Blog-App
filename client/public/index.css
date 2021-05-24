@@ -4,7 +4,7 @@ body {
   font-weight: normal;
   font-size: 15px;
   line-height: 30px;
-  color: #838C95;
+  color: #f8f8f8;
 
   -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
  -webkit-text-size-adjust: 100%;
@@ -42,13 +42,13 @@ header .banner {
 header .banner-text { width: 100%; }
 header .banner-text h2 {
   font: 80px/1.1em 'opensans-bold', sans-serif;
-  color:#313131;
+  color:#fdfdfd;
   letter-spacing: -2px;
   margin: 0 auto 18px auto;
 }
 header .banner-text h3 {
-  font: 18px/1.9em 'librebaskerville-regular', serif;
-  color: rgb(51, 50, 50);
+  font: 28px/2.1em 'librebaskerville-regular', serif;
+  color: rgb(250, 250, 250);
   margin: 0 auto;
   width: 70%;
 }
@@ -59,8 +59,8 @@ header .banner-text h3 a {
 header .banner-text hr {
   width: 60%;
   margin: 18px auto 24px auto;
-  border-color: #2F2D2E;
-  border-color: rgba(150, 150, 150, .1);
+  border-color: #fff;
+  border-color: #fdfdfd;
 }
 
 /* header social links */

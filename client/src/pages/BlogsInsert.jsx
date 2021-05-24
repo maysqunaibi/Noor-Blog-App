@@ -1,20 +1,20 @@
 import React, { Component } from "react";
 import api from "../api";
-
 import styled from "styled-components";
 import "froala-editor/css/froala_style.min.css";
 import "froala-editor/css/froala_editor.pkgd.min.css";
-import { NavBar } from '../components'
+import { NavBar } from "../components";
 import FroalaEditorComponent from "react-froala-wysiwyg";
 import Paper from "@material-ui/core/Paper";
 import TextField from "@material-ui/core/TextField";
+import ParticlesBg from "particles-bg";
 
 const Title = styled.h1.attrs({
   className: "h2",
 })`
   padding-left: 20px;
-  padding-bottom:10px;
-  padding-top:20px
+  padding-bottom: 10px;
+  padding-top: 20px;
 `;
 
 const Wrapper = styled.div.attrs({
@@ -30,7 +30,6 @@ const Wrapper = styled.div.attrs({
 
 const Button = styled.button.attrs({
   className: `btn btn-success`,
-  
 })`
   margin: 25px 25px 25px 25px;
   background-color: #28a745;
@@ -67,7 +66,7 @@ class BlogsInsert extends Component {
     this.setState({ title });
   };
   handleChangeInputText = async (model) => {
-    //const text = event.target.model;
+     
     this.setState({ model });
   };
   handleChangeInputTime = async (event) => {
@@ -90,59 +89,58 @@ class BlogsInsert extends Component {
       });
     });
   };
-
+  
   render() {
     const { authorName, title, model, readingTime } = this.state;
     return (
       <div>
-        <NavBar/>
-      <Wrapper>
-        <Paper elevation={3}>
-          <Title>Share Your Thoughts. Make a difference!.</Title>
+        <NavBar />
+        <ParticlesBg type="thick" num={10} bg={true} />
+        <Wrapper>
+          <Paper elevation={9}>
+            <Title>Share Your Thoughts. Make a difference!</Title>
 
-          <div id="test" style={{ display: "block", margin: "15px" }}>
-            <TextField
-              id="outlined-basic"
-              label="Author Name:"
-              variant="outlined"
-              type="text"
-              value={authorName}
-              onChange={this.handleChangeInputName}
-            />
-          </div>
-          <div id="test" style={{ display: "block", margin: "15px" }}>
-            <TextField
-              id="outlined-basic"
-              label="Title: "
-              variant="outlined"
-              type="text"
-              value={title}
-              onChange={this.handleChangeInputTitle}
-            />
-          </div>
-          <div style={{ margin: "15px" }}>
-            <FroalaEditorComponent
-              tag="textarea"
-              model={model}
-              onModelChange={this.handleChangeInputText}
-            />
-          </div>
-          {/* <FroalaEditorView model={this.state.content} /> */}
-
-          <div id="test" style={{ display: "block", margin: "15px" }}>
-            <TextField
-              id="outlined-basic"
-              label="Time for Reading:"
-              variant="outlined"
-              type="text"
-              value={readingTime}
-              onChange={this.handleChangeInputTime}
-            />
-          </div>
-          <Button onClick={this.handleIncludeBlog}>Create Blog</Button>
-          <CancelButton href={"/blogs/list"}>Cancel</CancelButton>
-        </Paper>
-      </Wrapper>
+            <div style={{ display: "block", margin: "15px" }}>
+              <TextField
+                id="outlined-basic"
+                label="Author Name:"
+                variant="outlined"
+                type="text"
+                value={authorName}
+                onChange={this.handleChangeInputName}
+              />
+            </div>
+            <div  style={{ display: "block", margin: "15px" }}>
+              <TextField
+                id="outlined-basic"
+                label="Title: "
+                variant="outlined"
+                type="text"
+                value={title}
+                onChange={this.handleChangeInputTitle}
+              />
+            </div>
+            <div style={{ margin: "15px" }} >
+              <FroalaEditorComponent
+                tag="textarea"
+                model={model}
+                onModelChange={this.handleChangeInputText}
+              />
+            </div>
+            <div style={{ display: "block", margin: "15px" }}>
+              <TextField
+                id="outlined-basic"
+                label="Time for Reading:"
+                variant="outlined"
+                type="text"
+                value={readingTime}
+                onChange={this.handleChangeInputTime}
+              />
+            </div>
+            <Button onClick={this.handleIncludeBlog}>Create Blog</Button>
+            <CancelButton href={"/blogs/list"}>Cancel</CancelButton>
+          </Paper>
+        </Wrapper>
       </div>
     );
   }
