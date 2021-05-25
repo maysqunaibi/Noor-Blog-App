@@ -1,6 +1,6 @@
 FROM node:14-slim
 
-WORKDIR /movies-app/app
+WORKDIR /Noor-Blog-App/app
 
 COPY ./package.json ./
 COPY ./package-lock.json ./
