@@ -43,6 +43,12 @@ $ docker build -t 'api-server' ./server
 $ docker build -t 'react-app' ./client
 $ docker-compose up
 ```
+``` 
+Running on port : 8000 
+```
+
+
+
 ![Header](https://imgur.com/c934HdY.png)
 
 ![Creat Blog](https://imgur.com/56XmG0D.png)
